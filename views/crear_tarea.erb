@@ -1,0 +1,15 @@
+<h1>Crear Tareas</h1>
+<br>
+<% if @status %>
+	<small style="color:red">Tarea creada</small>
+<% end %>
+<br>
+<form action="/tareas/crear" method="POST">
+	<label for="tarea">
+		Tarea
+		<input type="text" name="tarea">
+	</label>
+	<input type="submit" name="submit">
+</form>
+<br>
+
